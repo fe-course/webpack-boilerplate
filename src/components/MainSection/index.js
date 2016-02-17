@@ -49,8 +49,8 @@ class MainSection extends Component {
         <Footer completedCount={completedCount}
           activeCount={activeCount}
           filter={filter}
-          onClearCompleted={::this.handleClearCompleted}
-          onShow={::this.handleShow} />
+          onClearCompleted={this.handleClearCompleted}
+          onShow={this.handleShow} />
       )
     }
   }

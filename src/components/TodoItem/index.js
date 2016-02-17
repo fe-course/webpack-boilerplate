@@ -43,7 +43,7 @@ class TodoItem extends Component {
              checked={todo.completed}
              onChange={() => completeTodo(todo.id)} />
 
-          <label onDoubleClick={::this.handleDoubleClick}>
+          <label onDoubleClick={this.handleDoubleClick}>
             {todo.text}
           </label>
 

@@ -26,10 +26,16 @@ class TodoTextInput extends Component {
   }
 
   handleBlur(e) {
+    console.log(this.props.newTodo);
+
     const text = e.target.value.trim()
     if (!this.props.newTodo) {
       this.props.onSave(text)
     }
+  }
+
+  componentWillMount() {
+      console.log(this.props);
   }
 
   render() {
@@ -44,9 +50,9 @@ class TodoTextInput extends Component {
         autoFocus="true"
         placeholder={this.props.placeholder}
         value={this.state.text}
-        onBlur={::this.handleBlur}
-        onChange={::this.handleChange}
-        onKeyDown={::this.handleSubmit} />
+        onBlur={this.handleBlur}
+        onChange={this.handleChange}
+        onKeyDown={this.handleSubmit} />
     )
   }
 }

@@ -47,19 +47,19 @@ input[type="checkbox"] {
               0 25px 50px 0 rgba(0, 0, 0, 0.1);
 }
 
-.normal input::-webkit-input-placeholder {
+.normal input-webkit-input-placeholder {
   font-style: italic;
   font-weight: 300;
   color: #e6e6e6;
 }
 
-.normal input::-moz-placeholder {
+.normal input-moz-placeholder {
   font-style: italic;
   font-weight: 300;
   color: #e6e6e6;
 }
 
-.normal input::input-placeholder {
+.normal inputinput-placeholder {
   font-style: italic;
   font-weight: 300;
   color: #e6e6e6;

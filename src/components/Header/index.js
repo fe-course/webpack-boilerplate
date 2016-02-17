@@ -14,8 +14,8 @@ class Header extends Component {
       <header>
         <h1>Todos</h1>
         <TodoTextInput
-          newTodo
-          onSave={::this.handleSave}
+          newTodo={true}
+          onSave={this.handleSave}
           placeholder="What needs to be done?" />
       </header>
     )

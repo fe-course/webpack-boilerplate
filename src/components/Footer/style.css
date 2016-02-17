@@ -73,7 +73,7 @@ html .clearCompleted:active {
   position: relative;
 }
 
-.clearCompleted::after {
+.clearCompletedafter {
   visibility: visible;
   content: 'Clear completed';
   position: absolute;
@@ -81,7 +81,7 @@ html .clearCompleted:active {
   white-space: nowrap;
 }
 
-.clearCompleted:hover::after {
+.clearCompleted:hoverafter {
   text-decoration: underline;
 }
 
